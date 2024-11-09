@@ -3,6 +3,9 @@ from django.http import HttpResponse
 from .models import Item
 from django.views.decorators.http import require_http_methods
 
+"""Основной функционал приложения описан функциями получения всех обьектов,
+добавления нового обьекта, обновления и удаления по айди"""
+
 
 def index(request):
     wishlist = Item.objects.all()

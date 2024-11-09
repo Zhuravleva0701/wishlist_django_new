@@ -1,5 +1,7 @@
 from django.db import models
 
+"""модель подарка или желания"""
+
 
 class Item(models.Model):
     title = models.CharField('Название хотелки', max_length=300)
